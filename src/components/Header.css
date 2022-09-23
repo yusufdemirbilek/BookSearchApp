@@ -1,0 +1,38 @@
+.result {
+  display: inline-block;
+  margin: 2em;
+  background-color: white;
+  padding: 1em;
+}
+.result span::after {
+  content: " ";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-left: 27%;
+  margin-top: 0.3em;
+}
+.result a {
+  color: red;
+}
+
+.head {
+  background-image: url("https://fethica.github.io/BookSearch-React/img/bgheader.jpg");
+}
+.head .search {
+  padding: 1em;
+}
+.head .search Button {
+  margin-left: 1%;
+}
+.head .search .input {
+  box-shadow: "0 0 15px 0 red";
+}
+
+.main h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: aliceblue;
+}/*# sourceMappingURL=Header.css.map */
