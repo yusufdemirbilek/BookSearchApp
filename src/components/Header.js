@@ -46,7 +46,7 @@ function Header() {
                 style={{width:'200px', backgroundColor:'white', borderRadius:'5px',boxShadow:'0 0 15px 0 green'}}
              
             />
-             <Button variant="contained" color="success" size='medium'>
+             <Button type="submit" variant="contained" color="success" size='medium'>
                     Search
             </Button>
             </div>
@@ -60,8 +60,10 @@ function Header() {
                 ? "https://upload.wikimedia.org/wikipedia/commons/0/0a/No-image-available.png"
                 : `${book.volumeInfo.imageLinks.thumbnail}`} alt={book.title}/>
                 <br />
-                <div>
-                <a href={book.volumeInfo.previewLink} target="_blank" rel="noopener noreferrer">Preview</a>
+                <div className='link'>
+                <a href={book.volumeInfo.previewLink} target="_blank" rel="noopener noreferrer">Preview |</a>
+                
+                <a href={book.saleInfo.buyLink} target="_blank" rel="noopener noreferrer"> Buy Link</a>
                 </div>
                 <br />
                 <span>{book.volumeInfo.title}</span>

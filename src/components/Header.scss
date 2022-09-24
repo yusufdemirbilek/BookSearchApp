@@ -13,14 +13,22 @@
       margin-top: .3em;
    }
    a{
-      
-      color: red;
+      text-decoration: none;
+      color: rgb(144, 138, 138);
    }
 }
 
 .head{
-   
+   h2{
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 1em;
+      padding: .2em;
+      color: aliceblue;
+   }
    background-image: url("https://fethica.github.io/BookSearch-React/img/bgheader.jpg");
+   background-size: cover;
+   
    .search{
       padding: 1em;
 
@@ -34,11 +42,3 @@
    }
 }
 
-.main{
-   h2{
-      font-size: 2em;
-      font-weight: 600;
-      margin-bottom: 1em;
-      color: aliceblue;
-   }
-}
