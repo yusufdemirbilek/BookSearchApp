@@ -4,6 +4,6 @@
 
 ## Used Technologies :
 
--useState
--Axios
--forms
+- useState
+- Axios
+- forms
