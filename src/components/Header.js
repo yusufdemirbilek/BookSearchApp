@@ -63,7 +63,7 @@ function Header() {
                 <div className='link'>
                 <a href={book.volumeInfo.previewLink} target="_blank" rel="noopener noreferrer">Preview |</a>
                 
-                <a href={book.saleInfo.buyLink} target="_blank" rel="noopener noreferrer"> Buy Link</a>
+                <a href={book.saleInfo.buyLink === undefined ? `https://www.kitapyurdu.com/index.php?route=product/search&filter_name=${book.volumeInfo.title}` : `${book.saleInfo.buyLink}`} target="_blank" rel="noopener noreferrer"> Buy</a>
                 </div>
                 <br />
                 <span>{book.volumeInfo.title}</span>
